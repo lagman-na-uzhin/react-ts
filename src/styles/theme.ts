@@ -1,46 +1,72 @@
 import { createTheme } from '@mui/material/styles';
-import { red, grey, deepPurple} from '@mui/material/colors';
+import { red} from '@mui/material/colors';
 
 export const theme = createTheme({
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 600,
+            md: 960,
+            lg: 1280,
+            xl: 1920,
+        },
+    },
     palette: {
         primary: {
-            main: deepPurple[700],
+            main: '#5051F9',
         },
         secondary: {
-            main: deepPurple[900]
+            main: '#8a8af8'
         },
         background: {
-            default: grey[50],
-            paper: grey[300],
+            default: '#131517',
+            paper: '#1E1F25',
         },
         error: {
             main: red[500],
         },
         text: {
-            primary: grey[900], // Цвет основного текста
-            secondary: grey[500], // Цвет вторичного текста
+            primary: '#ffffff', // Цвет основного текста
+            secondary: '#898999', // Цвет вторичного текста
         },
+        success: {
+            main: '#0ACF83',
+        },
+        warning: {
+            main: '#FE7F2E',
+        },
+        info: {
+            main: '#2196f3',
+        },
+        action: {
+            active: '#5051F9',
+            hover: '#6264fd',
+            selected: '#eeeeee',
+            disabled: '#9e9e9e',
+            disabledBackground: '#424242',
+        },
+        divider: '#757575',
     },
     typography: {
         h1: {
             fontSize: '35px',
-            fontWeight: 400,
+            color: 'white'
         },
         h2: {
             fontSize: '25px',
-            fontWeight: 400,
+            color: 'white'
         },
         h3: {
             fontSize: '20px',
-            fontWeight: 400,
+            color: 'white'
         },
         body1: {
             fontSize: '15px',
-            fontWeight: 400,
+            color: 'white'
         },
         body2: {
             fontSize: '12px',
-            fontWeight: 400,
+            color: 'white'
         },
     },
-});
+})

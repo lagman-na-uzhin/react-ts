@@ -4,17 +4,17 @@ import AddIcon from '@mui/icons-material/Add';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 
-type BoardHeaderProps = {
+type BoardTitleProps = {
     icon: string,
     name: string
 }
 
-const BoardHeader:FC<BoardHeaderProps> = ({icon, name}) => {
+export const BoardTitle:FC<BoardTitleProps> = ({icon, name}) => {
 
     return (
         <Box
-            sx={{bgcolor: 'background.paper', height: '45px', borderRadius: '10px'}}
-            width='15%'
+            sx={{backgroundColor: 'background.paper', height: '45px', borderRadius: '10px', padding: '10px'}}
+            width='20%'
             display="flex"
             alignItems="center"
             justifyContent="space-between"
@@ -35,5 +35,3 @@ const BoardHeader:FC<BoardHeaderProps> = ({icon, name}) => {
         </Box>
     );
 };
-
-export default BoardHeader;

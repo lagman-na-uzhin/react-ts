@@ -1,16 +1,14 @@
-import {Popup} from "./components/Popup/Popup";
-import {useState} from "react";
+import {Routes, Route} from 'react-router-dom'
+import {AuthPage} from "./pages/Auth/AuthPage";
+import HomePage from "./pages/Home/HomePage";
 
 
 function App() {
-    const [open, setOpen] = useState<boolean>(false)
-
   return (
-    <>
-        <button onClick={()=>setOpen(true)}>Creacte task</button>
-      <Popup title="Create Task" setOpen={setOpen} open={open}><button>Create</button></Popup>
-    </>
+    <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/auth" element={<AuthPage/>}/>
+    </Routes>
   )
 }
-
 export default App

@@ -1,6 +1,6 @@
 import{FC,useState,MouseEvent} from 'react';
-import {Dropdown} from "../../../components/Dropdown/Dropdown";
-import {Avatar} from "../../../components/Avatar/Avatar";
+import {Dropdown} from "../../shared/Dropdown/Dropdown";
+import {Avatar} from "../../shared/Avatar/Avatar";
 import {Link} from "react-router-dom";
 import {Typography} from '@mui/material'
 
@@ -20,7 +20,7 @@ const HeaderAvatar:FC = () => {
     return (
         <Dropdown  menuItems={menuItems} handleClose={handleClose} anchorEl={anchorEl} open={!!anchorEl}>
 
-            <Avatar onClick={handleClick} letter='H'/>
+                <Avatar onClick={handleClick} letter='H'/>
 
         </Dropdown>
     );

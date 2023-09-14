@@ -1,4 +1,5 @@
-export interface IFormInput {
+export type Inputs = {
+    username: string
     email: string
     password: string
 }

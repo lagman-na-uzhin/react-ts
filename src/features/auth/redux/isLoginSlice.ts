@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import {RootState} from "../../../store";
 
 export interface isLoginState {
     value: boolean
@@ -14,7 +13,7 @@ export const isLoginSlice = createSlice({
     initialState,
     reducers: {
         toggleLogin: (state) => {
-            state.isLogin = !state.isLogin;
+            state.value = !state.value;
         },
     },
 })
